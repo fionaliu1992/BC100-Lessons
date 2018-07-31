@@ -4,9 +4,50 @@
 		<title>Responsive</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<style>
-			.box {
-				/*opacity: 0.7;*/
+			header {
+				background-color: maroon;
 			}
+			@media screen and (min-width: 500px){
+				header {background-color: pink;}
+			}
+			@media screen and (min-width: 800px){
+				header {background-color: blue;}
+			}
+			article {
+				background-color: yellow;
+				width: 420px;
+				float: left;
+
+			}
+			aside {
+				background-color: orange;
+				padding: 20px;
+				width: 160px;
+				float: right;
+			}
+			@media screen and (min-width: 800px;) {
+				article {
+
+					width: 420px;
+					float: left;
+				}
+				aside {
+
+					width: 160px;
+					float: right;
+
+			}
+			}
+			footer {
+				clear: both;
+			}
+			img {
+				width: 100%;
+			}
+			div.nothing {
+				clear: both;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -69,6 +110,7 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 				</aside>
+				<div class="nothing"></div>
 			</main>
 			<footer>FOOTER</footer>
 		</div>

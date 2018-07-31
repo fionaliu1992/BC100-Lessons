@@ -4,8 +4,40 @@
 		<title>Floats</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<style>
-			.box {
-				/*opacity: 0.7;*/
+
+			img {
+				float: left;
+				opacity: .4;
+			}
+			.box1 {
+				opacity: 0.7;
+				float: right;
+			}
+			.box2 {
+				float: right;
+			}
+			.box3 {
+				float: left;
+			}
+			.box4 {
+				float: right;
+			}
+			.box5 {
+				float: right;
+			}
+			footer {
+				clear: both;
+			}
+			div.clearmeplease:after {
+				content: "";
+				clear: both;
+				display: block;
+
+				height: 5px;
+				background-color: yellow;
+			}
+			div.nothing {
+				clear: both;
 			}
 		</style>
 	</head>
@@ -63,7 +95,9 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
+					<div class="clearmeplease"></div>
 				</article>
+				<div class="nothing"></div>
 			</main>
 			<footer>FOOTER</footer>
 		</div>
