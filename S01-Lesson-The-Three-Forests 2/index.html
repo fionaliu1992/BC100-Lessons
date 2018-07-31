@@ -1,0 +1,50 @@
+<!-- This is an HTML Comment, ignored by browser, good for taking notes -->
+<!-- Doctype: Tells the browser what type of document this is, usually HTML -->
+<!DOCTYPE html>
+<!-- HTML is the house for our web page, it contains everything -->
+<html>
+	<!-- Head is behind the scenes, describes the page meta, and connects to scripts. -->
+	<head>
+		<title>The 3 Forests</title>
+		<meta name="description" content="This is my Website, hear me roar.">
+	</head>
+	<!-- Body is synonymous with the Visible Document inside of our Viewport -->
+<style>
+	h1{ background-color: red}
+	h2{ background-color: blue}
+	h3{ background-color: yellow}
+	p{ background-color: green;
+		 margin: 20px;
+		 padding: 20px;
+		 font-size: 20px;
+	}
+</style>
+  <script>
+alert('Are you sure to continue?')
+console.log('Are you sure to continue?')
+window.onload= function(){
+	var image = document.getElementById('image1');
+
+	image1.addEventListener('click', function(){
+	image1.src = "sun.png";
+});
+  image1.addEventListener('mouseout', function(){
+  image1.src = "moon.png";
+});
+}
+	</script>
+
+	<body>
+		<!-- Anything you put in the body, shows up in the document, and therefpre the viewport. -->
+		<h1>The 3 Forests</h1>
+		<h2>Happy Birthday</h2>
+		<h3>To You</h3>
+		<img id=image1 src="moon.png" alt="Happy Birthday">
+		<img id=image2 src="sun.png">
+
+		<p><b>Today is</b> <br> <i>someone's birthday</i></p>
+		<a href="http://www.apple.com">Choose a present</a>
+
+
+	</body>
+</html>
